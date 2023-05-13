@@ -292,7 +292,7 @@ Blockly.Msg.SENSING_USERNAME = 'username';
 Blockly.Msg.SENSING_USERID = 'user id';
 Blockly.Msg.SENSING_ISTURBOMODE = 'turbo mode?';
 Blockly.Msg.SENSING_OPERATINGSYSTEM = 'operating system';
-Blockly.Msg.SENSING_CLIPCC_VERSION = 'ClipCC version';
+Blockly.Msg.SENSING_SCRATCH_VERSION = 'Scratch version';
 Blockly.Msg.SENSING_TURNONTURBOMODE = 'turn on turbo mode';
 Blockly.Msg.SENSING_TURNOFFTURBOMODE = 'turn off turbo mode';
 

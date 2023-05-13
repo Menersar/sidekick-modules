@@ -79,7 +79,7 @@ class Scratch3SensingBlocks {
             sensing_username: this.getUsername,
             sensing_userid: () => {}, // legacy no-op block
             sensing_operatingsystem: this.getOS,
-            sensing_clipcc_version: this.getVersion,
+            sensing_scratch_version: this.getVersion,
             sensing_turnonturbomode: (args, util) => {
                 this.setTurboMode(true);
             },

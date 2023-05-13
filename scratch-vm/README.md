@@ -1,23 +1,21 @@
-<div align="center">
+## scratch-vm
+#### Scratch VM is a library for representing, running, and maintaining the state of computer programs written using [Scratch Blocks](https://github.com/LLK/scratch-blocks).
 
-# clipcc-vm
-
-</div>
-
-#### ClipCC VM is a library for representing, running, and maintaining the state of computer programs written using [ClipCC Blocks](https://github.com/Clipteam/clipcc-block).
+[![Build Status](https://travis-ci.org/LLK/scratch-vm.svg?branch=develop)](https://travis-ci.org/LLK/scratch-vm)
+[![Coverage Status](https://coveralls.io/repos/github/LLK/scratch-vm/badge.svg?branch=develop)](https://coveralls.io/github/LLK/scratch-vm?branch=develop)
 
 ## Installation
 This requires you to have Git and Node.js installed.
 
 To install as a dependency for your own application:
 ```bash
-yarn install clipcc-vm
+npm install scratch-vm
 ```
-To set up a development environment to edit clipcc-vm yourself:
+To set up a development environment to edit scratch-vm yourself:
 ```bash
-git clone https://github.com/LLK/clipcc-vm.git
-cd clipcc-vm
-yarn install
+git clone https://github.com/LLK/scratch-vm.git
+cd scratch-vm
+npm install
 ```
 
 ## Development Server
@@ -28,7 +26,7 @@ For convenience, we've included a development server with the VM. This is someti
 ## Running the Development Server
 Open a Command Prompt or Terminal in the repository and run:
 ```bash
-yarn start
+npm start
 ```
 
 ## Playground
@@ -39,13 +37,13 @@ To view the Playground, make sure the dev server's running and go to [http://loc
 
 ## Standalone Build
 ```bash
-yarn run build
+npm run build
 ```
 
 ```html
-<script src="/path/to/dist/web/clipcc-vm.js"></script>
+<script src="/path/to/dist/web/scratch-vm.js"></script>
 <script>
-    var vm = new window.VirtualMachine({appVersion: '0.0.0'});
+    var vm = new window.VirtualMachine();
     // do things
 </script>
 ```
@@ -53,8 +51,8 @@ yarn run build
 ## How to include in a Node.js App
 For an extended setup example, check out the /src/playground directory, which includes a fully running VM instance.
 ```js
-var VirtualMachine = require('clipcc-vm');
-var vm = new VirtualMachine({appVersion: '0.0.0'});
+var VirtualMachine = require('scratch-vm');
+var vm = new VirtualMachine();
 
 // Block events
 Scratch.workspace.addChangeListener(vm.blockListener);
@@ -100,23 +98,23 @@ The VM's block representation contains all the important information for executi
 
 ## Testing
 ```bash
-yarn test
+npm test
 ```
 
 ```bash
-yarn run coverage
+npm run coverage
 ```
 
 ## Publishing to GitHub Pages
 ```bash
-yarn run deploy
+npm run deploy
 ```
 
 This will push the currently built playground to the gh-pages branch of the
 currently tracked remote.  If you would like to change where to push to, add
 a repo url argument:
 ```bash
-yarn run deploy -- -r <your repo url>
+npm run deploy -- -r <your repo url>
 ```
 
 ## Donate

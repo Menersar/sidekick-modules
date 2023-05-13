@@ -231,7 +231,7 @@ class VirtualMachine extends EventEmitter {
     
     /**
      * Set the compression level of sb3 file.
-     * It's exposed to clipcc-gui.
+     * It's exposed to scratch-gui.
      * @param {number} the compression level.
      */
     setCompressionLevel (level) {
@@ -443,17 +443,17 @@ class VirtualMachine extends EventEmitter {
     }
 
     /**
-     * Save *.cc3 project file.
+     * Save *.sk project file.
      * @param {object} options Project save options
      * @param {function} extensionCallback Get extensions
      * @returns {string} Project in a Scratch 3.0 JSON representation.
      */
-    saveProjectCc3 (options, extensionCallback) {
-        const cc3 = require('./serialization/cc3');
+    saveProjectSk (options, extensionCallback) {
+        const sk = require('./serialization/sk');
         const data = {
             soundDescs: serializeSounds(this.runtime),
             costumeDescs: serializeCostumes(this.runtime),
-            projectData: cc3.serialize(options, this.runtime)
+            projectData: sk.serialize(options, this.runtime)
         };
 
         // TODO want to eventually move zip creation out of here, and perhaps
@@ -473,7 +473,7 @@ class VirtualMachine extends EventEmitter {
 
         return zip.generateAsync({
             type: 'blob',
-            mimeType: 'application/x.clipcc.cc3',
+            mimeType: 'application/x.scratch.sk',
             compression: 'DEFLATE',
             compressionOptions: {
                 level: this.compressionLevel // Tradeoff between best speed (1) and best compression (9)
@@ -567,9 +567,9 @@ class VirtualMachine extends EventEmitter {
         }
         const runtime = this.runtime;
         const deserializePromise = function () {
-            if (projectJSON.meta && projectJSON.meta.editor === 'clipcc') {
-                const cc3 = require('./serialization/cc3');
-                return cc3.deserialize(projectJSON, runtime, zip);
+            if (projectJSON.meta && projectJSON.meta.editor === 'scratch') {
+                const sk = require('./serialization/sk');
+                return sk.deserialize(projectJSON, runtime, zip);
             }
             const projectVersion = projectJSON.projectVersion;
             if (projectVersion === 2) {
@@ -615,7 +615,7 @@ class VirtualMachine extends EventEmitter {
         /*
         // Since the extension loader was established in gui, so that
         // we shouldn't load extension here.
-        // See: clipcc-gui/src/lib/sb-file-uploader-hoc.jsx
+        // See: scratch-gui/src/lib/sb-file-uploader-hoc.jsx
         const extensionPromises = [];
 
         extensions.extensionIDs.forEach(extensionID => {
@@ -742,15 +742,15 @@ class VirtualMachine extends EventEmitter {
     }
 
     /**
-     * Add a single cc3 sprite.
+     * Add a single sk sprite.
      * @param {object} sprite Object rperesenting 3.0 sprite to be added.
      * @param {?ArrayBuffer} zip Optional zip of assets being referenced by target json
      * @returns {Promise} Promise that resolves after the sprite is added
      */
-    _addSpriteCc3 (sprite, zip) {
+    _addSpriteSk (sprite, zip) {
         // Validate & parse
-        const cc3 = require('./serialization/cc3');
-        return cc3
+        const sk = require('./serialization/sk');
+        return sk
             .deserialize(sprite, this.runtime, zip, true)
             .then(({targets, extensions}) => this.installTargets(targets, extensions, false));
     }

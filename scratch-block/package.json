@@ -1,13 +1,13 @@
 {
-  "name": "clipcc-block",
+  "name": "scratch-block",
   "version": "3.1.8",
-  "description": "Blocks for Clip CC",
-  "author": "Clip Team",
+  "description": "Scratch Blocks is a library for building creative computing interfaces.",
+  "author": "Massachusetts Institute of Technology",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/clipteam/clipcc-block",
+  "homepage": "https://github.com/LLK/scratch-blocks#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clipteam/clipcc-block.git"
+    "url": "https://github.com/LLK/scratch-blocks.git"
   },
   "main": "./dist/vertical.js",
   "browser": "./shim/vertical.js",
@@ -24,7 +24,7 @@
     "i18n": "node i18n/js_to_json.js && node i18n/json_to_js.js",
     "i18n:push": "poe-push block msg/json/en.json",
     "i18n:sync:src": "tx-push-src scratch-editor blocks msg/json/en.json",
-    "i18n:sync:translations": "node i18n/sync_clipcc_l10n.js",
+    "i18n:sync:translations": "node i18n/sync_scratch_l10n.js",
     "i18n:update": "yarn run i18n:sync:src && yarn run i18n:sync:translations"
   },
   "dependencies": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "async": "2.6.4",
     "chromedriver": "^93.0",
-    "clipcc-l10n": "3.1.9",
+    "scratch-l10n": "../sidekick-modules/scratch-l10n",
     "copy-webpack-plugin": "4.5.1",
     "eslint": "^4.16",
     "event-stream": "3.3.4",

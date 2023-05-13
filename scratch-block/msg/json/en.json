@@ -241,7 +241,7 @@
 	"SENSING_USERID": "user id",
 	"SENSING_ISTURBOMODE": "turbo mode?",
 	"SENSING_OPERATINGSYSTEM": "operating system",
-	"SENSING_CLIPCC_VERSION": "ClipCC version",
+	"SENSING_SCRATCH_VERSION": "Scratch version",
 	"SENSING_TURNONTURBOMODE": "turn on turbo mode",
 	"SENSING_TURNOFFTURBOMODE": "turn off turbo mode",
 	"SOUND_PLAY": "start sound %1",

@@ -194,8 +194,8 @@ class Runtime extends EventEmitter {
         this.executableTargets = [];
         
         /**
-         * The version of ClipCC.
-         * It should be set by clipcc-gui.
+         * The version of Scratch.
+         * It should be set by scratch-gui.
          * @type {String}
          */
         this.version = 'unknown';
@@ -306,12 +306,12 @@ class Runtime extends EventEmitter {
          */
         this.turboMode = false;
 
-        // the framerate of clipcc-vm
+        // the framerate of scratch-vm
         // 60 to match default of compatibility mode off
         this.frameRate = 60;
         
         /**
-         * Whether store settings in .cc3 file
+         * Whether store settings in .sk file
          * @type {boolean}
          */
          this.storeSettings = false;

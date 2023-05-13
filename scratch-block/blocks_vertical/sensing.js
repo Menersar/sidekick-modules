@@ -726,14 +726,14 @@ Blockly.Blocks['sensing_operatingsystem'] = {
   }
 };
 
-Blockly.Blocks['sensing_clipcc_version'] = {
+Blockly.Blocks['sensing_scratch_version'] = {
   /**
-   * Block to report user's clipcc version
+   * Block to report user's scratch version
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.SENSING_CLIPCC_VERSION,
+      "message0": Blockly.Msg.SENSING_SCRATCH_VERSION,
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_number"]
     });

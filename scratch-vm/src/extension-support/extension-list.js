@@ -14,8 +14,8 @@ const builtinExtensions = {
     makeymakey: () => require('../extensions/scratch3_makeymakey'),
     boost: () => require('../extensions/scratch3_boost'),
     gdxfor: () => require('../extensions/scratch3_gdx_for'),
-    httpio: () => require('../extensions/clip_httpio'),
-    ccjson: () => require('../extensions/clipcc_json')
+    httpio: () => require('../extensions/sidekick_httpio'),
+    json: () => require('../extensions/sidekick_json')
 };
 
 module.exports = builtinExtensions;

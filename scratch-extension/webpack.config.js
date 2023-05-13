@@ -7,8 +7,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         libraryTarget: 'commonjs2',
-        library: 'ClipCCExtension',
-        filename: 'clipcc-extension.js',
+        library: 'ScratchExtension',
+        filename: 'scratch-extension.js',
         path: path.resolve(__dirname, 'dist')
     },
     optimization: {
@@ -19,7 +19,7 @@ module.exports = {
     plugins: [
         new CopyPlugin([{
             from: path.join(__dirname, 'src/index.d.ts'),
-            to: path.join(__dirname, 'dist/clipcc-extension.d.ts')
+            to: path.join(__dirname, 'dist/scratch-extension.d.ts')
         }])
     ]
 };

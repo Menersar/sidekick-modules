@@ -302,7 +302,7 @@
     "NEW_BROADCAST_MESSAGE_TITLE": "Nom du nouveau message :",
     "BROADCAST_MODAL_TITLE": "Nouveau message",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "Version de ClipCC",
+    "SENSING_SCRATCH_VERSION": "Version de Scratch",
     "OPERATORS_INDEXOF": "position %1 de %2 contient %3",
     "PROCEDURES_RETURN": "renvoyer %1",
     "DISABLE_BLOCK": "Désactiver le bloc",

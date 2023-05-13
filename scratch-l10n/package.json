@@ -1,17 +1,17 @@
 {
-  "name": "clipcc-l10n",
+  "name": "scratch-l10n",
   "version": "3.1.9",
-  "description": "Localization library for ClipCC.",
-  "main": "dist/clipcc-l10n.js",
+  "description": "Localization for the Scratch 3.0 components.",
+  "main": "dist/scratch-l10n.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:clipteam/clipcc-l10n.git"
+    "url": "git+https://github.com/LLK/scratch-l10n.git"
   },
   "bin": {
     "build-i18n-src": "./scripts/build-i18n-src.js",
     "poe-push": "./scripts/poe-push.js"
   },
-  "author": "Clip Team",
+  "author": "Massachusetts Institute of Technology",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "yarn run clean && yarn run build:data && webpack --progress --colors --bail",

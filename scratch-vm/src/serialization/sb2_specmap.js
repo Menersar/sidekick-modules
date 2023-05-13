@@ -1638,9 +1638,9 @@ const specMap = {
         opcode: 'procedures_call',
         argMap: []
     },
-    // Clip Blocks
+    // Sidekick Blocks
     'createVar': {
-        opcode: 'clipblocks_createVariable',
+        opcode: 'sidekickblocks_createVariable',
         argMap: [
             {
                 type: 'input',
@@ -1650,7 +1650,7 @@ const specMap = {
         ]
     },
     'deleteVar': {
-        opcode: 'clipblocks_deleteVariable',
+        opcode: 'sidekickblocks_deleteVariable',
         argMap: [
             {
                 type: 'input',
@@ -1660,7 +1660,7 @@ const specMap = {
         ]
     },
     'lookup': {
-        opcode: 'clipblocks_isVariableExist',
+        opcode: 'sidekickblocks_isVariableExist',
         argMap: [
             {
                 type: 'input',
@@ -1670,7 +1670,7 @@ const specMap = {
         ]
     },
     'getVariableValue': {
-        opcode: 'clipblocks_valueOfVariable',
+        opcode: 'sidekickblocks_valueOfVariable',
         argMap: [
             {
                 type: 'input',
@@ -1681,17 +1681,17 @@ const specMap = {
     },
     // it's broken
     'setAllSpriteVisible': {
-        opcode: 'clipblocks_setVisibility',
+        opcode: 'sidekickblocks_setVisibility',
         argMap: [
             {
                 type: 'input',
-                inputOp: /* 'clipblocks_menu_booleanParam'*/'text',
+                inputOp: /* 'sidekickblocks_menu_booleanParam'*/'text',
                 inputName: 'BOOLEANMENU'
             }
         ]
     },
     'showtip': {
-        opcode: 'clipblocks_showDialog',
+        opcode: 'sidekickblocks_showDialog',
         argMap: [
             {
                 type: 'input',
@@ -1705,7 +1705,7 @@ const specMap = {
             },
             {
                 type: 'input',
-                inputOp: /* 'clipblocks_menu_booleanParam'*/'text',
+                inputOp: /* 'sidekickblocks_menu_booleanParam'*/'text',
                 inputName: 'BOOLEANMENU'
             },
             {
@@ -1766,7 +1766,7 @@ const specMap = {
         ]
     },
     'getColorOn': {
-        opcode: 'clipblocks_colorInPosition',
+        opcode: 'sidekickblocks_colorInPosition',
         argMap: [
             {
                 type: 'input',
@@ -1781,7 +1781,7 @@ const specMap = {
         ]
     },
     'setResolution': {
-        opcode: 'clipblocks_setStageSize',
+        opcode: 'sidekickblocks_setStageSize',
         argMap: [
             {
                 type: 'input',
@@ -1796,7 +1796,7 @@ const specMap = {
         ]
     },
     'setRate': {
-        opcode: 'clipblocks_setRate',
+        opcode: 'sidekickblocks_setRate',
         argMap: [
             {
                 type: 'input',
@@ -1806,7 +1806,7 @@ const specMap = {
         ]
     },
     'JSONparse': {
-        opcode: 'ccjson_getValueByKey',
+        opcode: 'sidekickblocks_json_getValueByKey',
         argMap: [
             {
                 type: 'input',
@@ -1821,11 +1821,11 @@ const specMap = {
         ]
     },
     'EXsetGraphicEffect:to:': {
-        opcode: 'clipblocks_setFlashGraphicEffect',
+        opcode: 'sidekickblocks_setFlashGraphicEffect',
         argMap: [
             {
                 type: 'input',
-                inputOp: /* 'clipblocks_menu_falshGraphicParam'*/'text',
+                inputOp: /* 'sidekickblocks_menu_falshGraphicParam'*/'text',
                 inputName: 'FLASHEFFECT'
             },
             {
@@ -1846,7 +1846,7 @@ const specMap = {
         ]
     },
     'EXfilterReset': {
-        opcode: 'clipblocks_clearFlashGraphicEffect',
+        opcode: 'sidekickblocks_clearFlashGraphicEffect',
         argMap: []
     },
     'setFontUnderline': {
@@ -1930,7 +1930,7 @@ const specMap = {
         ]
     },
     'setClipboradData': {
-        opcode: 'clipblocks_setClipboard',
+        opcode: 'sidekickblocks_setClipboard',
         argMap: [
             {
                 type: 'input',
@@ -1940,7 +1940,7 @@ const specMap = {
         ]
     },
     'getClipboardData': {
-        opcode: 'clipblocks_getClipboard',
+        opcode: 'sidekickblocks_getClipboard',
         argMap: []
     },
     'turboOn': {
@@ -1960,7 +1960,7 @@ const specMap = {
         argMap: []
     },
     'playSoundFromNetwork': {
-        opcode: 'clipblocks_playSoundFromInternet',
+        opcode: 'sidekickblocks_playSoundFromInternet',
         argMap: [
             {
                 type: 'input',
@@ -1970,11 +1970,11 @@ const specMap = {
         ]
     },
     'stopSoundFromNetwork': {
-        opcode: 'clipblocks_stopSoundFromInternet',
+        opcode: 'sidekickblocks_stopSoundFromInternet',
         argMap: []
     },
     'goto\tWeb': {
-        opcode: 'clipblocks_gotoWebsite',
+        opcode: 'sidekickblocks_gotoWebsite',
         argMap: [
             {
                 type: 'input',

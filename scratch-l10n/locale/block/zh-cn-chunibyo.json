@@ -302,7 +302,7 @@
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
-    "SENSING_CLIPCC_VERSION": "纪年",
+    "SENSING_SCRATCH_VERSION": "纪年",
     "OPERATORS_INDEXOF": "子串 %3 在 %2 中第 %1 次出现的位置",
     "PROCEDURES_RETURN": "炼成 %1",
     "DISABLE_BLOCK": "置之不理",

@@ -1,7 +1,7 @@
 import {updateIntl as superUpdateIntl} from 'react-intl-redux';
 import {IntlProvider, intlReducer} from 'react-intl-redux';
 
-import paintMessages from 'clipcc-l10n/dist/paint-msgs';
+import paintMessages from 'scratch-l10n/dist/paint-msgs';
 
 
 const intlInitialState = {

@@ -430,7 +430,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "New message name:",
     "BROADCAST_MODAL_TITLE": "New Message",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "ClipCC version",
+    "SENSING_SCRATCH_VERSION": "Scratch version",
     "OPERATORS_INDEXOF": "position %1 of %2 contain %3",
     "PROCEDURES_RETURN": "return %1",
     "DISABLE_BLOCK": "Disable Block",
@@ -754,7 +754,7 @@ Blockly.ScratchMsgs.locales["fr"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "Nom du nouveau message :",
     "BROADCAST_MODAL_TITLE": "Nouveau message",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "Version de ClipCC",
+    "SENSING_SCRATCH_VERSION": "Version de Scratch",
     "OPERATORS_INDEXOF": "position %1 de %2 contient %3",
     "PROCEDURES_RETURN": "renvoyer %1",
     "DISABLE_BLOCK": "Désactiver le bloc",
@@ -1078,7 +1078,7 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
-    "SENSING_CLIPCC_VERSION": "ClipCC版本",
+    "SENSING_SCRATCH_VERSION": "Scratch版本",
     "OPERATORS_INDEXOF": "字符串 %2 中子串 %3 第 %1 次出现的位置",
     "PROCEDURES_RETURN": "返回 %1",
     "DISABLE_BLOCK": "禁用积木",
@@ -1402,7 +1402,7 @@ Blockly.ScratchMsgs.locales["zh-tw"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新訊息的名稱",
     "BROADCAST_MODAL_TITLE": "新的訊息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "ClipCC版本",
+    "SENSING_SCRATCH_VERSION": "Scratch版本",
     "OPERATORS_INDEXOF": "%3 在 %2 中第 %1 次出現的位置",
     "PROCEDURES_RETURN": "返回%1",
     "DISABLE_BLOCK": "禁用積木",
@@ -1726,7 +1726,7 @@ Blockly.ScratchMsgs.locales["zh-cn-chunibyo"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
-    "SENSING_CLIPCC_VERSION": "纪年",
+    "SENSING_SCRATCH_VERSION": "纪年",
     "OPERATORS_INDEXOF": "子串 %3 在 %2 中第 %1 次出现的位置",
     "PROCEDURES_RETURN": "炼成 %1",
     "DISABLE_BLOCK": "置之不理",
@@ -2060,7 +2060,7 @@ Blockly.Msg.SENSING_USERNAME = 'username';
 Blockly.Msg.SENSING_USERID = 'user id';
 Blockly.Msg.SENSING_ISTURBOMODE = 'turbo mode?';
 Blockly.Msg.SENSING_OPERATINGSYSTEM = 'operating system';
-Blockly.Msg.SENSING_CLIPCC_VERSION = 'ClipCC version';
+Blockly.Msg.SENSING_SCRATCH_VERSION = 'Scratch version';
 Blockly.Msg.SENSING_TURNONTURBOMODE = 'turn on turbo mode';
 Blockly.Msg.SENSING_TURNOFFTURBOMODE = 'turn off turbo mode';
 

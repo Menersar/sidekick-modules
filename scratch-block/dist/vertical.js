@@ -440,7 +440,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "New message name:",
     "BROADCAST_MODAL_TITLE": "New Message",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "ClipCC version",
+    "SENSING_SCRATCH_VERSION": "Scratch version",
     "OPERATORS_INDEXOF": "position %1 of %2 contain %3",
     "PROCEDURES_RETURN": "return %1",
     "DISABLE_BLOCK": "Disable Block",
@@ -764,7 +764,7 @@ Blockly.ScratchMsgs.locales["fr"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "Nom du nouveau message :",
     "BROADCAST_MODAL_TITLE": "Nouveau message",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "Version de ClipCC",
+    "SENSING_SCRATCH_VERSION": "Version de Scratch",
     "OPERATORS_INDEXOF": "position %1 de %2 contient %3",
     "PROCEDURES_RETURN": "renvoyer %1",
     "DISABLE_BLOCK": "Désactiver le bloc",
@@ -1088,7 +1088,7 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
-    "SENSING_CLIPCC_VERSION": "ClipCC版本",
+    "SENSING_SCRATCH_VERSION": "Scratch版本",
     "OPERATORS_INDEXOF": "字符串 %2 中子串 %3 第 %1 次出现的位置",
     "PROCEDURES_RETURN": "返回 %1",
     "DISABLE_BLOCK": "禁用积木",
@@ -1412,7 +1412,7 @@ Blockly.ScratchMsgs.locales["zh-tw"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新訊息的名稱",
     "BROADCAST_MODAL_TITLE": "新的訊息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "message1",
-    "SENSING_CLIPCC_VERSION": "ClipCC版本",
+    "SENSING_SCRATCH_VERSION": "Scratch版本",
     "OPERATORS_INDEXOF": "%3 在 %2 中第 %1 次出現的位置",
     "PROCEDURES_RETURN": "返回%1",
     "DISABLE_BLOCK": "禁用積木",
@@ -1736,7 +1736,7 @@ Blockly.ScratchMsgs.locales["zh-cn-chunibyo"] =
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
     "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
-    "SENSING_CLIPCC_VERSION": "纪年",
+    "SENSING_SCRATCH_VERSION": "纪年",
     "OPERATORS_INDEXOF": "子串 %3 在 %2 中第 %1 次出现的位置",
     "PROCEDURES_RETURN": "炼成 %1",
     "DISABLE_BLOCK": "置之不理",
@@ -2070,7 +2070,7 @@ Blockly.Msg.SENSING_USERNAME = 'username';
 Blockly.Msg.SENSING_USERID = 'user id';
 Blockly.Msg.SENSING_ISTURBOMODE = 'turbo mode?';
 Blockly.Msg.SENSING_OPERATINGSYSTEM = 'operating system';
-Blockly.Msg.SENSING_CLIPCC_VERSION = 'ClipCC version';
+Blockly.Msg.SENSING_SCRATCH_VERSION = 'Scratch version';
 Blockly.Msg.SENSING_TURNONTURBOMODE = 'turn on turbo mode';
 Blockly.Msg.SENSING_TURNOFFTURBOMODE = 'turn off turbo mode';
 
@@ -2417,7 +2417,7 @@ Blockly.Blocks.sensing_of={init:function(){this.jsonInit({message0:Blockly.Msg.S
 Blockly.Blocks.sensing_current={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_CURRENT,args0:[{type:"field_dropdown",name:"CURRENTMENU",options:[[Blockly.Msg.SENSING_CURRENT_YEAR,"YEAR"],[Blockly.Msg.SENSING_CURRENT_MONTH,"MONTH"],[Blockly.Msg.SENSING_CURRENT_DATE,"DATE"],[Blockly.Msg.SENSING_CURRENT_DAYOFWEEK,"DAYOFWEEK"],[Blockly.Msg.SENSING_CURRENT_HOUR,"HOUR"],[Blockly.Msg.SENSING_CURRENT_MINUTE,"MINUTE"],[Blockly.Msg.SENSING_CURRENT_SECOND,"SECOND"]]}],category:Blockly.Categories.sensing,
 checkboxInFlyout:!0,extensions:["colours_sensing","output_number"]})}};Blockly.Blocks.sensing_dayssince2000={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_DAYSSINCE2000,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_number"]})}};Blockly.Blocks.sensing_username={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_USERNAME,category:Blockly.Categories.sensing,checkboxInFlyout:!0,extensions:["colours_sensing","output_number"]})}};
 Blockly.Blocks.sensing_userid={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_USERID,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_number"]})}};Blockly.Blocks.sensing_operatingsystem={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_OPERATINGSYSTEM,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_number"]})}};
-Blockly.Blocks.sensing_clipcc_version={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_CLIPCC_VERSION,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_number"]})}};Blockly.Blocks.sensing_isturbomode={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_ISTURBOMODE,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_boolean"]})}};
+Blockly.Blocks.sensing_scratch_version={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_SCRATCH_VERSION,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_number"]})}};Blockly.Blocks.sensing_isturbomode={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_ISTURBOMODE,category:Blockly.Categories.sensing,extensions:["colours_sensing","output_boolean"]})}};
 Blockly.Blocks.sensing_turnonturbomode={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_TURNONTURBOMODE,category:Blockly.Categories.sensing,extensions:["colours_sensing","shape_statement"]})}};Blockly.Blocks.sensing_turnoffturbomode={init:function(){this.jsonInit({message0:Blockly.Msg.SENSING_TURNOFFTURBOMODE,category:Blockly.Categories.sensing,extensions:["colours_sensing","shape_statement"]})}};Blockly.Blocks.sound={};Blockly.Blocks.sound_sounds_menu={init:function(){this.jsonInit({message0:"%1",args0:[{type:"field_dropdown",name:"SOUND_MENU",options:[["1","0"],["2","1"],["3","2"],["4","3"],["5","4"],["6","5"],["7","6"],["8","7"],["9","8"],["10","9"],["call a function",function(){window.alert("function called!")}]]}],colour:Blockly.Colours.sounds.secondary,colourSecondary:Blockly.Colours.sounds.secondary,colourTertiary:Blockly.Colours.sounds.tertiary,extensions:["output_string"]})}};
 Blockly.Blocks.sound_play={init:function(){this.jsonInit({message0:Blockly.Msg.SOUND_PLAY,args0:[{type:"input_value",name:"SOUND_MENU"}],category:Blockly.Categories.sound,extensions:["colours_sounds","shape_statement"]})}};Blockly.Blocks.sound_playuntildone={init:function(){this.jsonInit({message0:Blockly.Msg.SOUND_PLAYUNTILDONE,args0:[{type:"input_value",name:"SOUND_MENU"}],category:Blockly.Categories.sound,extensions:["colours_sounds","shape_statement"]})}};
 Blockly.Blocks.sound_stopallsounds={init:function(){this.jsonInit({message0:Blockly.Msg.SOUND_STOPALLSOUNDS,category:Blockly.Categories.sound,extensions:["colours_sounds","shape_statement"]})}};

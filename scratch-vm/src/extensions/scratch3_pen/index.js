@@ -495,7 +495,7 @@ class Scratch3PenBlocks {
                     arguments: {
                         TEXT: {
                             type: ArgumentType.STRING,
-                            defaultValue: 'I love ClipCC!'
+                            defaultValue: 'I love Scratch!'
                         },
                         X: {
                             type: ArgumentType.NUMBER,
@@ -768,7 +768,7 @@ class Scratch3PenBlocks {
         }
     }
 
-    // ClipBlocks
+    // ScratchBlocks
     setPrintFontUnderline (args) {
         this.printTextAttribute.underline = Cast.toBoolean(args.BOOLEANMENU);
     }

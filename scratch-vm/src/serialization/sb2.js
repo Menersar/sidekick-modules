@@ -2,7 +2,7 @@
  * @fileoverview
  * Partial implementation of an SB2 JSON importer.
  * Parses provided JSON and then generates all needed
- * clipcc-vm runtime structures.
+ * scratch-vm runtime structures.
  */
 
 const Blocks = require('../engine/blocks');
@@ -1093,7 +1093,7 @@ const parseBlock = function (sb2block, addBroadcastMsg, getVariableId, extension
                 if (shadowObscured) {
                     fieldValue = 'this sprite';
                 }
-            } else if (expectedArg.inputOp === 'clipblocks.menu.booleanParam') {
+            } else if (expectedArg.inputOp === 'sidekickblocks.menu.booleanParam') {
                 if (shadowObscured) {
                     fieldValue = 'false';
                 }

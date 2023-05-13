@@ -108,7 +108,7 @@ module.exports = [
             'redux': 'redux'
         },
         entry: {
-            'clipcc-paint': './src/index.js'
+            'scratch-paint': './src/index.js'
         },
         output: {
             path: path.resolve(__dirname, 'dist'),

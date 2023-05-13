@@ -1,7 +1,7 @@
 /**
  * @fileoverview
  * An SB3 serializer and deserializer. Parses provided
- * JSON and then generates all needed clipcc-vm runtime structures.
+ * JSON and then generates all needed scratch-vm runtime structures.
  */
 
 const vmPackage = require('../../package.json');
@@ -984,7 +984,7 @@ const getReporters = function (blocks) {
 
 const handleUnknownBlocks = function (blockJSON, extensionID, handleMethod, reporters) {
     // eslint-disable-next-line no-alert
-    alert('由于原有逻辑会与ClipCC扩展功能冲突，故该功能暂时下线。请期待之后的重制版扩展!');
+    alert('由于原有逻辑会与Scratch扩展功能冲突，故该功能暂时下线。请期待之后的重制版扩展!');
     return;
     /*
     switch (handleMethod) {

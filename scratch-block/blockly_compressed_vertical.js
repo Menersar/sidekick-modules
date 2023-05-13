@@ -404,8 +404,8 @@ Blockly.Touch.isMouseOrTouchEvent=function(a){return Blockly.utils.startsWith(a.
 
  Visual Blocks Editor
 
- Copyright 2022 Clip Team
- All rights reserved.
+ Copyright 2012 Google Inc.
+ https://developers.google.com/blockly/
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
