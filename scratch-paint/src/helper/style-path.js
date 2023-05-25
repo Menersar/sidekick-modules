@@ -24,6 +24,8 @@ const colorsEqual = (color1, color2) => {
     //     log.warn('colorsEqual passed non-Colors');
     //     return false;
     // }
+    // !!! UMSCHREIBEN !!!
+    // !!!
     // CC - 这里的 instanceof 在gui里始终为false 所以我也不知道怎么解决，先注释吧
 
     const hsb1 = color1.type === 'hsb' ? color1 : color1.convert('hsb');
@@ -35,7 +37,7 @@ const colorsEqual = (color1, color2) => {
     // CC - 注释这里以便支持调整透明度，我不理解为什么LLK要在这里判断，甚至原本的判断代码写错了。
 
     // Colors that are similar enough, as determined by this threshold, will be considered equal.
-    // (in terms of units on the Scratch color scale)
+    // (in terms of units on the Sidekick color scale)
     const EPSILON = 0.1;
 
     return (
@@ -418,7 +420,9 @@ const applyStrokeWidthToSelection = function (value, textEditTargetId) {
 
 const _colorStateFromGradient = gradient => {
     const colorState = {};
-    // Scratch only recognizes 2 color gradients
+    // ??? Ja, und ... ???
+    // !!!
+    // Sidekick only recognizes 2 color gradients
     if (gradient.stops.length === 2) {
         if (gradient.radial) {
             colorState.gradientType = GradientTypes.RADIAL;

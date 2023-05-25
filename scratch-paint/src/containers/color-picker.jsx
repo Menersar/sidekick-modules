@@ -173,16 +173,16 @@ ColorPicker.propTypes = {
 
 const mapStateToProps = (state, ownProps) => ({
     color: ownProps.isStrokeColor ?
-        state.scratchPaint.color.strokeColor.primary :
-        state.scratchPaint.color.fillColor.primary,
+        state.sidekickPaint.color.strokeColor.primary :
+        state.sidekickPaint.color.fillColor.primary,
     color2: ownProps.isStrokeColor ?
-        state.scratchPaint.color.strokeColor.secondary :
-        state.scratchPaint.color.fillColor.secondary,
+        state.sidekickPaint.color.strokeColor.secondary :
+        state.sidekickPaint.color.fillColor.secondary,
     colorIndex: ownProps.isStrokeColor ?
-        state.scratchPaint.color.strokeColor.activeIndex :
-        state.scratchPaint.color.fillColor.activeIndex,
-    mode: state.scratchPaint.mode,
-    rtl: state.scratchPaint.layout.rtl
+        state.sidekickPaint.color.strokeColor.activeIndex :
+        state.sidekickPaint.color.fillColor.activeIndex,
+    mode: state.sidekickPaint.mode,
+    rtl: state.sidekickPaint.layout.rtl
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

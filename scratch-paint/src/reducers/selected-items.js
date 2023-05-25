@@ -1,6 +1,6 @@
 import log from '../log/log';
-const CHANGE_SELECTED_ITEMS = 'scratch-paint/select/CHANGE_SELECTED_ITEMS';
-const REDRAW_SELECTION_BOX = 'scratch-paint/select/REDRAW_SELECTION_BOX';
+const CHANGE_SELECTED_ITEMS = 'scratch-paintelect/CHANGE_SELECTED_ITEMS';
+const REDRAW_SELECTION_BOX = 'scratch-paintelect/REDRAW_SELECTION_BOX';
 const initialState = [];
 
 const reducer = function (state, action) {

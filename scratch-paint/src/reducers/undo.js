@@ -1,9 +1,9 @@
 import log from '../log/log';
 
-const UNDO = 'scratch-paint/undo/UNDO';
-const REDO = 'scratch-paint/undo/REDO';
-const SNAPSHOT = 'scratch-paint/undo/SNAPSHOT';
-const CLEAR = 'scratch-paint/undo/CLEAR';
+const UNDO = 'scrathhpaint/undo/UNDO';
+const REDO = 'scrathhpaint/undo/REDO';
+const SNAPSHOT = 'scrathhpaint/undo/SNAPSHOT';
+const CLEAR = 'scrathhpaint/undo/CLEAR';
 const MAX_STACK_SIZE = 100;
 const initialState = {
     stack: [],

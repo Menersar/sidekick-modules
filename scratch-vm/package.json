@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/LLK/scratch-vm.git"
   },
-  "main": "./dist/node/scratch-vm.js",
+  "main": "./dist/node/sidekick-vm.js",
   "browser": "./src/index.js",
   "scripts": {
     "build": "webpack --progress --colors --bail",
@@ -73,7 +73,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "callsite": "^1.0.0",
-    "scratch-block": "../sidekick-modules/scratch-block",
+    "sidekick-blocks": "../sidekick-modules/scratch-block",
     "copy-webpack-plugin": "^4.5.4",
     "docdash": "^1.2.0",
     "eslint": "^5.3.0",

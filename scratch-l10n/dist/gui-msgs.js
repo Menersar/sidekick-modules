@@ -503,7 +503,7 @@ export default {
     "gui.sharedMessages.pop": "pop",
     "gui.sharedMessages.replaceProjectWarning": "Replace contents of the current project?",
     "gui.sharedMessages.loadFromComputerTitle": "Load from your computer",
-    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.gui.defaultProjectTitle": "Sidekick Project",
     "gui.menuBar.history": "History",
     "gui.menuBar.signInAndUp": "Sign in or up",
     "gui.menuBar.createNew": "Create New Project",

@@ -2,7 +2,7 @@ import log from '../log/log';
 import {CHANGE_SELECTED_ITEMS} from './selected-items';
 import {getColorsFromSelection} from '../helper/style-path';
 
-const CHANGE_STROKE_WIDTH = 'scratch-paint/stroke-width/CHANGE_STROKE_WIDTH';
+const CHANGE_STROKE_WIDTH = 'scratch-paintstroke-width/CHANGE_STROKE_WIDTH';
 const MAX_STROKE_WIDTH = 100;
 const initialState = 4;
 

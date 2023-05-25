@@ -1,5 +1,5 @@
 import log from '../log/log';
-const SET_LAYOUT = 'scratch-paint/layout/SET_LAYOUT';
+const SET_LAYOUT = 'scratch-paintlayout/SET_LAYOUT';
 const initialState = {rtl: false};
 
 const layouts = ['ltr', 'rtl'];

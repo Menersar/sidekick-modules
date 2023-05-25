@@ -1,5 +1,5 @@
-const OPEN_MODAL = 'scratch-paint/modals/OPEN_MODAL';
-const CLOSE_MODAL = 'scratch-paint/modals/CLOSE_MODAL';
+const OPEN_MODAL = 'scratch-paintmodals/OPEN_MODAL';
+const CLOSE_MODAL = 'scratch-paintmodals/CLOSE_MODAL';
 
 const MODAL_FILL_COLOR = 'fillColor';
 const MODAL_STROKE_COLOR = 'strokeColor';

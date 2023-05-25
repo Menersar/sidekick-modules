@@ -1,5 +1,5 @@
 /**
- * Currently supported locales for the Scratch Project
+ * Currently supported locales for the Sidekick Project
  * @type {Object} Key Value pairs of locale code: Language name written in the language
  */
 

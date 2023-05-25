@@ -64,6 +64,8 @@ class ColorPickerComponent extends React.Component {
                 stops.push(hsvToCssString(this.props.hue, this.props.saturation, n));
                 break;
             case 'alpha':
+                // ??? "reference TurboWarp/scratch-paint/src/components/color-picker/color-picker.jsx" ???
+                // !!!
                 // reference TurboWarp/scratch-paint/src/components/color-picker/color-picker.jsx
                 let alpha = Math.round((n / 100) * 255).toString(16).padStart(2, '0');
                 stops.push(`${hsvToCssString(this.props.hue, this.props.saturation, this.props.brightness)}${alpha}`);
